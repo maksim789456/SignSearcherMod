@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "signsearcher",
+	"version": "${version}",
+	"name": "Sign Searcher",
+	"description": "Mod for searching text in signs around player",
+	"authors": [
+		"maksim789456"
+	],
+	"contact": {
+		"sources": "https://github.com/maksim789456/SignSearcherMod"
+	},
+	"license": "MIT",
+	"icon": "assets/signsearcher/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [],
+		"client": [
+			{
+				"value": "me.maksim789456.signsearcher.SignSearcherMod",
+				"adapter": "kotlin"
+			}
+		],
+		"modmenu": [
+			"me.maksim789456.signsearcher.config.ModConfigMenu"
+		]
+	},
+	"mixins": [
+		"signsearcher.minecraft.mixins.json",
+		"signsearcher.sodium.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"fabric-language-kotlin": ">=1.9.10"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}

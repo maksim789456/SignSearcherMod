@@ -1,0 +1,12 @@
+{
+	"required": false,
+	"package": "me.maksim789456.signsearcher.mixin.sodium",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [],
+	"client": [
+		"SodiumWorldRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

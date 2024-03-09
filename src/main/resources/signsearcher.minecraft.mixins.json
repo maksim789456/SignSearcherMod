@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"package": "me.maksim789456.signsearcher.mixin.minecraft",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [],
+	"client": [
+		"SignBlockEntityMixin",
+		"SignTextMixin",
+		"BlockEntityMixin",
+		"BlockEntityRenderDispatcherMixin",
+		"WorldRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
